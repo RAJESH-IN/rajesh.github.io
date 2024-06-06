@@ -10,7 +10,6 @@ document.addEventListener('load', ()=>{
  const flexBox = document.getElementById('flex-box');
  const searchbar = document.getElementById('search-bar');
 
-
  
 /**
  * Check and initialize the local storage items for favorite list and last input
@@ -234,7 +233,7 @@ function addRemoveToFavList(id) {
  */
  
 async function showMealDetails(itemId, searchInput) {
-    console.log("searchInput:...............", searchInput);
+    console.log("searchInput:..", searchInput);
     const list = JSON.parse(localStorage.getItem(dbObjectFavList));
     flexBox.scrollTo({ top: 0, behavior: "smooth" });
     const url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
